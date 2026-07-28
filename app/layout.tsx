@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sandali Chandrasekara — DevOps Engineer",
+  title: "Sandali Chandrasekara",
   description:
     "DevOps Engineer building reliable, automated infrastructure. Portfolio, background, and contact.",
 };
