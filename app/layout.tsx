@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sandali Chandrasekara",
+  title: "Sandali Chandrasekara — DevOps Engineer",
   description:
     "DevOps Engineer building reliable, automated infrastructure. Portfolio, background, and contact.",
 };
@@ -37,7 +37,12 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased bg-white text-slate-900`}
       >
-        <div className="flex min-h-screen flex-col">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-40 bg-gradient-to-t from-blue-600/10 via-blue-600/5 to-transparent"
+        />
+
+        <div className="relative z-10 flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
