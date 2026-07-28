@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About — Sandali Chandrasekara",
+  title: "About - Sandali Chandrasekara",
 };
 
 export default function AboutPage() {

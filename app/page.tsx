@@ -7,7 +7,7 @@ export default function HomePage() {
         </p>
  
         <h1 className="font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-          Hi, I&apos;m Sandali
+          Hey, I&apos;m Sandali
           <span className="ml-1 inline-block animate-blink text-blue-600">
             _
           </span>

@@ -1,7 +1,7 @@
 import { Mail, Github, Linkedin } from "lucide-react";
 
 export const metadata = {
-  title: "Contact — Sandali Chandrasekara",
+  title: "Contact - Sandali Chandrasekara",
 };
 
 const links = [
