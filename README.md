@@ -2,7 +2,7 @@
 
 My personal portfolio website showcasing projects, skills, and experience.
 
-🔗 **Live at:** [sandalichandrasekara.xyz](https://sandalichandrasekara.xyz)
+**Live at:** [sandalichandrasekara.xyz](https://sandalichandrasekara.xyz)
 
 ## About
 
