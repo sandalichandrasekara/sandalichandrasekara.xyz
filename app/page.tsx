@@ -14,8 +14,8 @@ export default function HomePage() {
         </h1>
  
         <p className="mt-5 text-lg leading-relaxed text-slate-500">
-          A DevOps Engineer who builds reliable, automated infrastructure —
-          one pipeline at a time.
+          A passionate DevOps Engineer with hands-on experience in cloud platforms, CI/CD automation, and
+          infrastructure management, dedicated to building secure, scalable, and reliable solutions.
         </p>
       </div>
     </section>
