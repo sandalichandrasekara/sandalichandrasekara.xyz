@@ -39,7 +39,7 @@ export default function RootLayout({
       >
         <div
           aria-hidden="true"
-          className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-40 bg-gradient-to-t from-blue-600/10 via-blue-600/5 to-transparent"
+          className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-1/4 bg-gradient-to-t from-blue-600/25 via-blue-600/10 to-transparent"
         />
 
         <div className="relative z-10 flex min-h-screen flex-col">
