@@ -7,20 +7,20 @@ export const metadata = {
 const links = [
   {
     label: "Email",
-    value: "your.email@example.com",
-    href: "mailto:your.email@example.com",
+    value: "sandalichandrasekarat20@gmail.com",
+    href: "mailto:sandalichandrasekarat20@gmail.com",
     icon: Mail,
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/your-profile",
-    href: "https://linkedin.com/in/your-profile",
+    value: "linkedin.com/in/sandalichandrasekara",
+    href: "https://www.linkedin.com/in/sandalichandrasekara",
     icon: Linkedin,
   },
   {
     label: "GitHub",
-    value: "github.com/your-username",
-    href: "https://github.com/your-username",
+    value: "github.com/sandalichandrasekara",
+    href: "https://github.com/sandalichandrasekara",
     icon: Github,
   },
 ];
@@ -35,7 +35,7 @@ export default function ContactPage() {
       </h1>
 
       <p className="mt-4 text-base leading-relaxed text-slate-500">
-        Feel free to reach out — I&apos;m always happy to connect.
+        Feel free to reach out, I&apos;m always happy to connect.
       </p>
 
       <div className="mt-10 flex flex-col gap-4">
