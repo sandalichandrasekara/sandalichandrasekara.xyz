@@ -13,24 +13,23 @@ export default function AboutPage() {
 
       <div className="mt-8 space-y-6 text-base leading-relaxed text-slate-600">
         <p>
-          I&apos;m a DevOps Engineer with a passion for building infrastructure
-          that just works — reliable, automated, and built to scale without
-          drama. I care about the systems behind the systems: the pipelines,
-          the monitoring, the small automations that quietly save teams hours
-          every week.
+          I&apos;m a DevOps Engineer passionate about building reliable, scalable, and automated
+          infrastructure that enables teams to deliver software faster and more efficiently. 
+          With over 2 years of hands-on experience in DevOps, I have worked across cloud environments,
+          CI/CD automation, infrastructure management, monitoring, and production system support.
         </p>
 
         <p>
-          My day-to-day lives somewhere between cloud platforms, CI/CD
-          pipelines, containers, and infrastructure as code. I enjoy taking
-          manual, error-prone processes and turning them into something
-          repeatable and boring — in the best possible way.
+          My experience includes working with AWS, Azure, and GCP platforms, designing and
+          maintaining deployment pipelines, automating workflows, and improving system
+          reliability through modern DevOps practices. I enjoy bridging the gap between
+          development and operations by creating solutions that are secure, efficient, and easy to maintain.
         </p>
 
         <p>
-          Outside of shipping pipelines, I&apos;m always learning — new tools,
-          new patterns, better ways to keep systems resilient and teams
-          moving fast without breaking things.
+          Beyond technology, I believe in continuous learning, problem-solving, and improving
+          processes through automation. I am always exploring new tools and practices to build
+          better systems and contribute meaningful value to engineering teams.
         </p>
       </div>
     </section>
