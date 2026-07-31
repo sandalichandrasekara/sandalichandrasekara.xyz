@@ -24,13 +24,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sandalichandrasekara.xyz"),
   title: {
-    default: "Sandali Chandrasekara - DevOps Engineer",
+    default: "Sandali Chandrasekara",
     template: "%s — Sandali Chandrasekara",
   },
   description:
     "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",
   openGraph: {
-    title: "Sandali Chandrasekara - DevOps Engineer",
+    title: "Sandali Chandrasekara",
     description:
       "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",
     url: "https://sandalichandrasekara.xyz",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Sandali Chandrasekara - DevOps Engineer",
+    title: "Sandali Chandrasekara",
     description:
       "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",
   },
@@ -57,6 +57,9 @@ const personJsonLd = {
     "https://github.com/sandalichandrasekara",
     "https://medium.com/@sandalichandrasekara",
     "https://x.com/sanyyylia",
+    "https://facebook.com/sanyyylia",
+    "https://youtube.com/@sandalinc",
+    "https://pinterest.com/sanyyylia",    
   ],
 };
 
