@@ -1,7 +1,12 @@
 import { Mail, Github, Linkedin } from "lucide-react";
 
 export const metadata = {
-  title: "Contact - Sandali Chandrasekara",
+  title: "Contact",
+  description:
+    "Get in touch with Sandali Chandrasekara — DevOps Engineer. Connect via email, GitHub, or LinkedIn.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const links = [

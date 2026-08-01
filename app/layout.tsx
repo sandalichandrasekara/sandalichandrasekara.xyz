@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   },
   description:
     "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Sandali Chandrasekara",
     description:
@@ -38,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Sandali Chandrasekara",
     description:
       "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",

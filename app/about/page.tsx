@@ -1,5 +1,10 @@
 export const metadata = {
-  title: "About - Sandali Chandrasekara",
+  title: "About",
+  description:
+    "About Sandali Chandrasekara — a DevOps Engineer focused on cloud infrastructure, CI/CD automation, and building reliable, scalable systems.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {
