@@ -18,7 +18,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-2xl items-center justify-between px-6 py-5">
         <Link href="/" className="block">
           <Image
-            src="/images/profile.jpg"
+            src="/images/avatar.jpg"
             alt="Sandali Chandrasekara"
             width={36}
             height={36}
