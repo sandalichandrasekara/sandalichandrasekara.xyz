@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sandalichandrasekara.xyz"),
   title: {
     default: "Sandali Chandrasekara",
-    template: "%s — Sandali Chandrasekara",
+    template: "%s - Sandali Chandrasekara",
   },
   description:
     "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",
