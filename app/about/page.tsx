@@ -10,13 +10,13 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <section className="mx-auto max-w-2xl px-6 py-20">
-      <p className="mb-3 font-mono text-sm text-blue-600">$ cat about.md</p>
+      <p className="animate-fade-up mb-3 font-mono text-sm text-blue-600">$ cat about.md</p>
 
-      <h1 className="font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+      <h1 className="animate-fade-up delay-1 font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
         About Me
       </h1>
 
-      <div className="mt-8 space-y-6 text-base leading-relaxed text-slate-600">
+      <div className="animate-fade-up delay-2 mt-8 space-y-6 text-base leading-relaxed text-slate-600">
         <p>
           I&apos;m a DevOps Engineer focused on building reliable, scalable
           infrastructure that lets teams ship software with confidence. I work

@@ -33,17 +33,17 @@ const links = [
 export default function ContactPage() {
   return (
     <section className="mx-auto max-w-2xl px-6 py-20">
-      <p className="mb-3 font-mono text-sm text-blue-600">$ contact --info</p>
+      <p className="animate-fade-up mb-3 font-mono text-sm text-blue-600">$ contact --info</p>
 
-      <h1 className="font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+      <h1 className="animate-fade-up delay-1 font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
         Get in Touch
       </h1>
 
-      <p className="mt-4 text-base leading-relaxed text-slate-500">
+      <p className="animate-fade-up delay-2 mt-4 text-base leading-relaxed text-slate-500">
         Feel free to reach out, I&apos;m always happy to connect.
       </p>
 
-      <div className="mt-10 flex flex-col gap-4">
+      <div className="animate-fade-up delay-3 mt-10 flex flex-col gap-4">
         {links.map(({ label, value, href, icon: Icon }) => (
           <a
             key={label}
