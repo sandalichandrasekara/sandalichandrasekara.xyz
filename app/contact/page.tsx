@@ -53,12 +53,7 @@ export default function ContactPage() {
             className="group flex items-center gap-4 rounded-lg border border-slate-200 px-5 py-4 transition-colors hover:border-blue-600 hover:bg-blue-50/40"
           >
             <Icon className="h-5 w-5 text-slate-400 transition-colors group-hover:text-blue-600" />
-            <div>
-              <p className="font-mono text-xs uppercase tracking-wide text-slate-400">
-                {label}
-              </p>
-              <p className="text-sm text-slate-700">{value}</p>
-            </div>
+            <p className="text-sm text-slate-700">{value}</p>
           </a>
         ))}
       </div>
