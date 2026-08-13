@@ -87,7 +87,15 @@ export default function RootLayout({
 
         <div
           aria-hidden="true"
-          className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-1/4 bg-gradient-to-t from-blue-600/25 via-blue-600/10 to-transparent"
+          className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-1/4"
+          style={{
+            background:
+              "linear-gradient(to right, #ff3b30, #ff9500, #ffcc00, #34c759, #00c7be, #007aff, #af52de, #ff2d92)",
+            WebkitMaskImage:
+              "linear-gradient(to top, rgba(0,0,0,0.3), transparent)",
+            maskImage:
+              "linear-gradient(to top, rgba(0,0,0,0.3), transparent)",
+          }}
         />
 
         <div className="relative z-10 flex min-h-screen flex-col">
