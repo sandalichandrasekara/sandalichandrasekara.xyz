@@ -18,23 +18,23 @@ export default function AboutPage() {
 
       <div className="mt-8 space-y-6 text-base leading-relaxed text-slate-600">
         <p>
-          I&apos;m a DevOps Engineer passionate about building reliable, scalable, and automated
-          infrastructure that enables teams to deliver software faster and more efficiently. 
-          With over 2 years of hands-on experience in DevOps, I have worked across cloud environments,
-          CI/CD automation, infrastructure management, monitoring, and production system support.
+          I&apos;m a DevOps Engineer focused on building reliable, scalable
+          infrastructure that lets teams ship software with confidence. I work
+          across AWS, Azure, and GCP, designing CI/CD pipelines, automating
+          deployments, and strengthening the systems that keep production
+          running.
         </p>
 
         <p>
-          My experience includes working with AWS, Azure, and GCP platforms, designing and
-          maintaining deployment pipelines, automating workflows, and improving system
-          reliability through modern DevOps practices. I enjoy bridging the gap between
-          development and operations by creating solutions that are secure, efficient, and easy to maintain.
+          I focus on automating repetitive processes, implementing effective
+          monitoring, and embedding reliability into systems from the ground up.
+          My goal is to deliver solutions that are secure, maintainable, and
+          built to scale.
         </p>
 
         <p>
-          Beyond technology, I believe in continuous learning, problem-solving, and improving
-          processes through automation. I am always exploring new tools and practices to build
-          better systems and contribute meaningful value to engineering teams.
+          I&apos;m driven by continuous improvement, always refining processes
+          and exploring new tools to build better, more resilient systems.
         </p>
       </div>
     </section>
