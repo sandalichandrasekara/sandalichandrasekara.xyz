@@ -26,13 +26,6 @@ export default function AboutPage() {
         </p>
 
         <p>
-          I focus on automating repetitive processes, implementing effective
-          monitoring, and embedding reliability into systems from the ground up.
-          My goal is to deliver solutions that are secure, maintainable, and
-          built to scale.
-        </p>
-
-        <p>
           I&apos;m driven by continuous improvement, always refining processes
           and exploring new tools to build better, more resilient systems.
         </p>
