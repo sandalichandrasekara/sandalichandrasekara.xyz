@@ -8,14 +8,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        blue: {
-          600: "#2563EB",
+        ios: {
+          blue: "#007AFF",
+          blueText: "#0066CC",
+          bg: "#FBFBFD",
+          label: "#1D1D1F",
+          secondary: "#6E6E73",
+          tertiary: "#8E8E93",
         },
       },
       fontFamily: {
-        display: ["var(--font-display)"],
+        display: ["var(--font-body)"],
         body: ["var(--font-body)"],
         mono: ["var(--font-mono)"],
+      },
+      borderRadius: {
+        ios: "16px",
+      },
+      transitionTimingFunction: {
+        spring: "cubic-bezier(0.34, 1.56, 0.64, 1)",
       },
     },
   },

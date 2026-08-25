@@ -14,30 +14,33 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/80 backdrop-blur">
-      <nav className="mx-auto flex max-w-2xl items-center justify-between px-6 py-5">
-        <Link href="/" className="block">
+    <header className="glass sticky top-0 z-50 border-b border-black/[0.06]">
+      <nav className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
+        <Link href="/" className="press block">
           <Image
             src="/images/logo.png"
             alt="Sandali Chandrasekara"
-            width={44}
-            height={44}
+            width={40}
+            height={40}
             className="object-contain"
             priority
           />
         </Link>
 
-        <ul className="flex items-center gap-6">
+        {/* iOS segmented control */}
+        <ul className="flex items-center gap-1 rounded-full bg-black/[0.04] p-1">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive = item.href === "/"
+              ? pathname === "/"
+              : pathname.startsWith(item.href);
             return (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`text-sm transition-colors ${
+                  className={`block rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-300 ease-spring ${
                     isActive
-                      ? "text-blue-600"
-                      : "text-slate-500 hover:text-slate-900"
+                      ? "bg-white text-ios-label shadow-sm"
+                      : "text-ios-secondary hover:text-ios-label"
                   }`}
                 >
                   {item.label}

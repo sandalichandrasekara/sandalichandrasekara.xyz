@@ -1,25 +1,14 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["500", "600", "700"],
-});
-
+// SF Pro renders natively on Apple devices; Inter is the fallback everywhere else.
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-body",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -81,20 +70,21 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased bg-white text-slate-900`}
+        className={`${inter.variable} antialiased bg-ios-bg text-ios-label`}
       >
         <GoogleAnalytics />
 
         <div
           aria-hidden="true"
-          className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-1/4"
+          className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-1/3"
           style={{
             background:
               "linear-gradient(to right, #ff3b30, #ff9500, #ffcc00, #34c759, #00c7be, #007aff, #af52de, #ff2d92)",
             WebkitMaskImage:
-              "linear-gradient(to top, rgba(0,0,0,0.3), transparent)",
+              "linear-gradient(to top, rgba(0,0,0,0.18), transparent)",
             maskImage:
-              "linear-gradient(to top, rgba(0,0,0,0.3), transparent)",
+              "linear-gradient(to top, rgba(0,0,0,0.18), transparent)",
+            filter: "blur(8px)",
           }}
         />
 
