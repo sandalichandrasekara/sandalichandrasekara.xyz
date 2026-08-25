@@ -10,11 +10,13 @@ export default function HomePage() {
           Hey, I&apos;m Sandali
         </h1>
 
-        <p className="animate-fade-up delay-2 mt-5 text-lg leading-relaxed text-ios-secondary">
-          A passionate DevOps Engineer with hands-on experience in cloud
-          platforms, CI/CD automation, and infrastructure management, dedicated
-          to building secure, scalable, and reliable solutions.
-        </p>
+        <div className="ios-card animate-fade-up delay-2 mt-6 p-7 sm:p-9">
+          <p className="text-lg leading-relaxed text-ios-secondary">
+            A passionate DevOps Engineer with hands-on experience in cloud
+            platforms, CI/CD automation, and infrastructure management,
+            dedicated to building secure, scalable, and reliable solutions.
+          </p>
+        </div>
       </div>
     </section>
   );
