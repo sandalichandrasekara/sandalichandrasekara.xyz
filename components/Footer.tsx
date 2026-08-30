@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-black/[0.06] py-8">
       <div className="mx-auto flex max-w-2xl flex-col items-center gap-2 px-6 text-center">
         <p className="font-mono text-xs text-ios-tertiary">
-          © {year} Sandali Chandrasekara
+          © {year} Sandali Chandrasekara. All rights reserved.
         </p>
       </div>
     </footer>
