@@ -79,7 +79,7 @@ export default function RootLayout({
           className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-1/3"
           style={{
             background:
-              "linear-gradient(to right, #ff3b30, #ff9500, #ffcc00, #34c759, #00c7be, #007aff, #af52de, #ff2d92)",
+              "linear-gradient(to right, #cfe4ff, #a7c9ff, #7fb0ff, #5b9bff, #7fb0ff, #a7c9ff, #cfe4ff)",
             WebkitMaskImage:
               "linear-gradient(to top, rgba(0,0,0,0.18), transparent)",
             maskImage:
