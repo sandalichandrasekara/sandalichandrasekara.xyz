@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function HomePage() {
   return (
     <section className="flex min-h-[calc(100vh-8rem)] items-center justify-center px-6">
@@ -7,8 +15,11 @@ export default function HomePage() {
         </p>
 
         <h1 className="animate-fade-up delay-1 font-display text-4xl font-semibold tracking-tight text-ios-label sm:text-5xl">
-          Hey, I&apos;m Sandali
+          Sandali Chandrasekara
         </h1>
+        <p className="animate-fade-up delay-1 mt-3 text-xl text-ios-secondary">
+          Hey, I&apos;m Sandali
+        </p>
 
         <div className="ios-card animate-fade-up delay-2 mt-6 p-7 sm:p-9">
           <p className="text-lg leading-relaxed text-ios-secondary">
