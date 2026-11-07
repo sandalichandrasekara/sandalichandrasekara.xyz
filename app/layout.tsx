@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { SITE_URL, PERSON_NAME, personJsonLd, toJsonLd } from "@/lib/profiles";
 import "./globals.css";
 
 // SF Pro renders natively on Apple devices; Inter is the fallback everywhere else.
@@ -11,49 +12,32 @@ const inter = Inter({
   variable: "--font-body",
 });
 
+const DESCRIPTION =
+  "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sandalichandrasekara.xyz"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sandali Chandrasekara",
-    template: "%s - Sandali Chandrasekara",
+    default: `${PERSON_NAME} - DevOps Engineer`,
+    template: `%s - ${PERSON_NAME}`,
   },
-  description:
-    "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",
-  alternates: {
-    canonical: "/",
-  },
+  description: DESCRIPTION,
+  authors: [{ name: PERSON_NAME, url: SITE_URL }],
+  creator: PERSON_NAME,
+  // No site-wide canonical here: a canonical set in the root layout is inherited
+  // by every page that doesn't override it. Each page sets its own.
   openGraph: {
-    title: "Sandali Chandrasekara",
-    description:
-      "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",
-    url: "https://sandalichandrasekara.xyz",
-    siteName: "Sandali Chandrasekara",
+    title: PERSON_NAME,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: PERSON_NAME,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sandali Chandrasekara",
-    description:
-      "DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and reliable, scalable systems.",
+    title: PERSON_NAME,
+    description: DESCRIPTION,
   },
-};
-
-const personJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Sandali Chandrasekara",
-  url: "https://sandalichandrasekara.xyz",
-  jobTitle: "DevOps Engineer",
-  image: "https://sandalichandrasekara.xyz/images/profile.jpg",
-  sameAs: [
-    "https://linkedin.com/in/sandalichandrasekara",
-    "https://github.com/sandalichandrasekara",
-    "https://medium.com/@sandalichandrasekara",
-    "https://x.com/sanyyylia",
-    "https://facebook.com/sanyyylia",
-    "https://youtube.com/@sandalinc",
-    "https://pinterest.com/sanyyylia",    
-  ],
 };
 
 export default function RootLayout({
@@ -63,15 +47,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
-        />
-      </head>
       <body
         className={`${inter.variable} antialiased bg-ios-bg text-ios-label`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: toJsonLd({ "@context": "https://schema.org", ...personJsonLd }),
+          }}
+        />
+
         <GoogleAnalytics />
 
         <div
